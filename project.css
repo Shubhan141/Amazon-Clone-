@@ -1,0 +1,534 @@
+/* Now we want to set the default some property  */
+
+* {
+
+    margin: 0px;
+    /* default margin should be 0px*/
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+    /* to ensure padding and border are included in the total width and height of the element. */
+
+
+}
+/* ++++++++++++ for the small screen create nav bar  */
+nav{
+    padding: 10px;
+    width: 100vw;
+    height: auto;
+    background-color: #131921;
+    display: none;
+}
+.verticalDiv1{
+    /* width: 100vw;
+    height: 65px; */
+    background-color: #131921;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+
+ }
+
+ .logoClassContainer{
+    display: flex;
+ }
+
+ #amazoneLogoIcon{
+    width: 80px;
+    height: auto;
+    margin:  0px 10px;
+ }
+.secondDivContainer{
+    display: flex;
+    width: 100%;
+    /* border: 2px solid red; */
+}.secondDivContainer input{
+    flex-grow: 1;
+} 
+
+ .verticalDiv3{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+   
+ }
+ .verticalDiv1, .verticalDiv2 , .verticalDiv3{
+    white-space: 100%;
+    /* border: 2px solid  green; */
+ }
+
+.navbar {
+    height: 55px;
+    background-color: #131921;
+    color: white;
+    /* inside the navbar multiple div having  to align in the left side  */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding: 2px 10px;
+
+
+}
+
+nav-address,
+.nav-logo {
+    width: 100px;
+    height: 50px;
+
+}
+
+/* to add the amezon logo  */
+.logo {
+    width: 95px;
+    height: inherit;
+    margin-top: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./logoamezone.png);
+
+}
+
+/* give a border to the all elements  */
+.border {
+    border: 2p solid transparent;
+    /* same color will be on scrolling */
+}
+
+.border:hover {
+    border: 3px solid white;
+}
+
+/* box 2*/
+.icondiv {
+    display: flex;
+    align-items: center;
+    /* location logo and paragraph will come in center */
+}
+
+.address-first {
+    color: #cccccc;
+    font-size: 0.8rem;
+    margin-left: 12px;
+    /* deliver thoda sa aage se khisk raha hai */
+}
+
+.addres-secont {
+    font-size: 1rem;
+    /* location and indian para gie margin  */
+    margin-left: 3px;
+}
+
+/* 3rd box */
+/* third box having first select, searching and magnyfing glass.  */
+.nav-search {
+    display: flex;
+    border-radius: 4px;
+    width: 600px;
+    height: 50px;
+    /* background-color: green; */
+    align-items: center;
+}
+
+
+.search-select {
+    background-color: #E6E6E6;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    width: 60px;
+    height: 38px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.search-input {
+    width: 100%;
+    /* rest area will occupied*/
+    height: 38px;
+    padding: 7px 10px 10px 0px;
+    font-size: 1rem;
+    margin-left: -1px;
+
+}
+
+.search-icon {
+    background-color: #FEBD69;
+    width: 45px;
+    height: 38px;
+    margin-left: -1px;
+    /* give radious from the right top and right bottom  */
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    /* search icone is not in center make its parent flex and give center main and cross axis  */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* increase the searh icon  */
+    font-size: 1.5rem;
+
+    /* to be center search icon  */
+    /* .incenter{
+        margin-top: 12px;
+        margin-left: 12px;
+     }  */
+
+}
+/* box five  */
+
+.national-flag {
+
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-image: url(./logoamezone.png);
+    background-repeat: no-repeat;
+}
+
+/* box siz account and list same as the return and Ordres */
+.nav-sign {
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: cente;
+
+}
+
+.hello-class {
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    font-weight: 400;
+}
+
+.acc-list {
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+}
+
+/**  last box cart icon**/
+.cart-size {
+    font-size: 38px;
+}
+
+/** second nav bar  **/
+
+.second-navbar {
+
+    background-color: #232F3E;
+    height: 40px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 0.8rem;
+    /* display: none; */
+    padding: 2px 10px;
+
+}
+
+
+.menu-list {
+    display: flex;
+    width: 65%;
+
+}
+
+.menu-list p {
+    margin: 0px 5px;
+}
+
+.menu-shopdeals {
+    font-size: 1rem;
+    font-weight: 700px;
+}
+
+/**  Let's move the here section **/
+.container-div {
+    display: flex;
+}
+
+.Hero-section {
+    width: 100%;
+    height: 45vh;
+
+    background-image: url("./nav-bar-imgimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-msg {
+    background-color: white;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    position: absolute;
+    top: 55vh;
+    left: 23%;
+}
+
+.hero-msg a {
+    color: #007185;
+
+}
+
+/* ++++++++++++++++ Add media query for hte large screen nav menu is different and for hte small screen nav menu is different */
+@media all and (max-width:900px){
+    nav{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+    .second-navbar{
+        display: none;
+    }
+}
+
+/**  shoping section**/
+.cardContainer {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    justify-content: space-around;
+    margin: 10px;
+    flex-wrap: wrap;
+    background-color:  rgb(227,230,230);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 18%;
+    margin: 3px;
+    /* will adjust according to the content  */
+    max-height: 240px;
+    padding: 5px;
+  
+    background-color: white;
+    /* border: 2px solid red; */
+   
+}
+
+.card h2 {
+    /* border: 2px solid red; */
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+
+}
+
+.card img {
+    width: 90%;
+    height: 200px;
+    max-height: 150px;
+    /* border: 2px solid green; */
+    width: 100%;
+    margin-bottom: 2px;
+
+}
+
+.card a {
+    /* border: 2px solid maroon; */
+    color: white;
+    /* background-color: #3f14ea; */
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-top: 5px;
+    color: rgb(59, 191, 220);
+   cursor: pointer;
+}
+
+/* ++++++++++++Add media query for the responsiveness */
+@media all and (max-width:900px){
+    /* 4 card should be appear in one row */
+    .card{
+        width: 23%;
+    }
+}
+@media all and (max-width:500px){
+    /* 4 card should be appear in one row */
+    .card{
+        width: 30%;
+    }
+}
+@media all and (max-width:400px) {
+    /* 4 card should be appear in one row */
+    .card{
+        width: 45%;
+    }
+}
+
+
+/**  footer section of the webpage **/
+.footer-section {
+    width: 100vw;
+    height: auto;
+    /*  as will be required */
+    background-color: #37475A;
+}
+#footerAnchor a{
+    color:white ;
+    text-decoration: none;
+}
+
+.pannel-one {
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* links section  */
+.pannel-2 {
+   width: 100vw;
+   height: auto;
+    background-color: #232F3E;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 2px solid rgb(25, 0, 255); */
+    padding: 10px;
+    /* flex-wrap: wrap; */
+}
+.pannel-2 .footerCard {
+    /* border: 2px solid maroon; */
+    margin: 10px;
+    height: auto;
+    /* default case in one row should be appear 4 div */
+    width: 18%; 
+    /* text-align: center; */
+    /* border: 2px solid red; */
+}
+
+/* Media Query for screens up to 768px */
+@media all and (max-width: 900px) {
+    .pannel-2 .footerCard {
+        width: 40%; /* Two footerCards in one row */
+    }
+    .pannel-2{
+        flex-wrap: wrap;
+    }
+}
+
+/* Media Query for screens up to 300px */
+@media all and (max-width: 500px) {
+    .pannel-2 .footerCard {
+        width: 51%; /* One footerCard in one row */
+        /* border: 2px solid red; */
+      margin: 2px auto;
+    
+    }
+    .pannel-2{
+        flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid red;
+    }
+}
+
+
+
+.list-heading {
+    color: white;
+    margin: 6px 0px 14px;
+    font-size: 16px;
+    /* border: 2px solid white; */
+}
+
+.list {
+    list-style: none;
+    padding-left: 0px;
+    /* border: 2px solid green; */
+}
+
+.list a {
+
+    color: #DDCAB4;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+
+
+
+ 
+/**  pannel3**/
+.panne3 {
+    border-top: 2px solid rgb(253, 252, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    color: white;
+    
+}
+#pannelIMg{
+    width: 100px;
+    height: 25px;
+    margin-top: 10px;
+}
+.amezonLogo{
+    border: 2px solid white;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.dollerDiv{
+    border: 2px solid white;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.english{
+    border: 2px solid white;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.unitedState{
+    border: 2px solid white;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#unitedIMg{
+    width: 30px;
+    height: 16px;
+   border-top:5px solid white ;
+}
+
+@media all and (max-width:900px){
+    .panne3{
+        flex-wrap: wrap;
+    }
+
+}
+@media all and (max-width:500px){
+    .panne3{
+        flex-wrap: wrap;
+    }
+    .english{
+        padding: 2px 15px;
+    }
+
+}
+
+
+
